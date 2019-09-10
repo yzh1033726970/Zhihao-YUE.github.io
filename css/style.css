@@ -459,7 +459,7 @@ p.banp.mt-3 {
 	-ms-transition: 0.5s all;
 }
 section.services {
-    padding: 5em 12em;
+    padding: 0 0;
     text-align: left;
     background: #fff;
    border-top: solid 6px #f4f4f4;
@@ -1053,6 +1053,9 @@ h4.main_hd {
     font-size: 1.4em !important;
 }
 }
+#project{
+	background:url(../images/123.jpg);
+}
 #projectInfo{
 	margin:10px 40px;
 	font-size: 1.1em;
@@ -1070,5 +1073,9 @@ h4.main_hd {
 	margin:10px 40px;
 	width:280px;
 	height:280px;
+}
+#background1{
+	background: url(../images/789.jpg); 
+	padding:5em 12em;
 }
 /* -- //Responsive code -- */
