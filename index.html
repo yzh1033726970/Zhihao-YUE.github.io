@@ -26,6 +26,8 @@
 			<img src="./images/about.jpg" alt="news image" id="navImg" class="img-fluid navimg">
 			<h1 class="top_hd mt-2">岳志浩</h1>
 			<p class="top_hdp mt-2">ouc17级计算机科学与技术本科生</p>
+			<a href="./images/qq1.jpg" target="blank"><img class="responsive-img social-photo " src="./images/qq.png"></a>
+			<a href="./images/wx1.png" target="_blank"><img class="responsive-img social-photo " src="./images/wx.png"></a>
         </div>
 		<!-- header -->
         <header>
@@ -34,7 +36,7 @@
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop">
 						<ul class="menu">
-							<li class="active"><a href="#home" class="scroll">首页</a></li>
+							<li class="mt-sm-3"><a href="#home" class="scroll">首页</a></li>
 							 <li class="mt-sm-3"><a href="#about" class="scroll">关于我</a></li>
 							<li class="mt-sm-3"><a href="#services" class="scroll">教育背景</a></li>
 							<li class="mt-sm-3"><a href="#news" class="scroll">校园经历</a></li>
@@ -53,17 +55,27 @@
                 <div class="mx-auto text-center">
                     <h3>岳志浩
 				</h3>
-					<p class="banp mx-auto mt-3">人生格言：人生的意义就在于不断的自我完善！  </p>
-					<a href="./images/qq1.jpg" target="blank"><img class="responsive-img social-photo " src="./images/qq.png"></a>
-					<a href="./images/wx1.png" target="_blank"><img class="responsive-img social-photo " src="./images/wx.png"></a>
+					<div class="banp mx-auto mt-3">
+					<pre id="language_one" style=" color:#F93; font-size:34px;"></pre>
+					<div style="display:none;" id="language_two">人生格言：人生的意义就在于不断的自我完善!</div>
+					</div>
+					<script language="javascript">
+					    var index=0;
+					    var word=document.getElementById("language_two").innerHTML;
+					    function type(){
+					        document.getElementById("language_one").innerText = word.substring(0,index++);
+					    }
+					    setInterval(type, 100);
+					</script>
 					<h1></h1>
 					<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">了解我</a>
                 </div>
             </div>
         </div>
 		<!-- about -->
+
 <section class="slide-wrapper" id="about">
-	<h2 class="w3_head mb-4">关于我 </h2>
+	<h2 class="w3_head mb-4">关于我 </h2><hr color="blue">
 	<h4 class="main_hd"> 出生日期：1999年02月02日 &nbsp 学历：本科在读 <br>手机：15192896809</h4>
 	<h4 class="main_hd"> 外语水平：英语CET6</h4>
 	<h4 class="main_hd"> 邮箱：1033726970@qq.com</h4>
@@ -74,7 +86,7 @@
 <section class="services" id="services">
 <div id="background1">
 	<div class="container">
-		<h3 class="w3_head mb-4 text-left"> 教育背景</h3>
+		<h3 class="w3_head mb-4 text-left"> 教育背景</h3><hr color="blue">
 			<ul>
 				<li>
 					<div class="row">
@@ -94,7 +106,7 @@
 		<!-- //services -->
 		<!-- news -->
        <div class="news" id="news">
-		<h3 class="w3_head mb-4 text-left"> 校园经历</h3>
+		<h3 class="w3_head mb-4 text-left"> 校园经历</h3><hr color="blue">
 		<div class="row news-grids-left mt-5">
 			<div class="col-lg-5 news_top">
 				<img src="images/g1.jpg" alt="news image" class="img-fluid">
@@ -139,7 +151,7 @@
 	</div>
 <!-- //news -->
 <div class="project" id="project">
-		<h3 class="w3_head mb-4 text-left"> 项目经历</h3>
+		<h3 class="w3_head mb-4 text-left"> 项目经历</h3><hr color="blue">
 		<div id="projectInfo">
 			<ul>
 				<li>
@@ -161,7 +173,7 @@
 	</div>
 	
 <div class="judge" id="judge">
-	<h3 class="w3_head mb-4 text-left"> 自我评价</h3>
+	<h3 class="w3_head mb-4 text-left"> 自我评价</h3><hr color="blue">
 	<div id="judgeInfo">
 		性格积极乐观，待人友好，具有沟通能力和抗压能力，能够吃苦耐劳；对待工作认真热情，具有较强的团队合作精神和较强的学习能力，对编程很热爱，对互联网保持高度的敏感性和关注度，平时爱钻研技术和编程学习，逛各大技术论坛，爱和别人讨论。具有良好的规范代码编写习惯和具有较好的编写文档的能力等
 	</div>
@@ -169,13 +181,13 @@
 
 <!-- contact -->
 <section class="wedo" id="contact">
-	<h3 class="w3_head mb-4 text-left"> 联系我</h3>
+	<h3 class="w3_head mb-4 text-left"> 联系我</h3><hr color="blue">
 	<div class="images">
 		<img src="./images/qq1.jpg" alt="news image" id="qqImage">
 		<img src="./images/wx1.png" alt="news image" id="wxImage">
 	</div>
 <div class="cpy-right text-center">
-	<p>Copyright &copy; 2019.</p>
+	<p>Copyright ©copy 2019</p>
 </div>
 </section>
 	 <!-- //contact -->
